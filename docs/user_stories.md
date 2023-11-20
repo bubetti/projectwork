@@ -1,14 +1,14 @@
 # User Stories
-_Budapest GO_
+_Budapest Go_
 
 1. **Feature**: Accept cookies on website
 
     Rule: Cookies can be accepted by clicking on a button
 
     Example: I accept cookies
-    Given I open BudapestGO
+    Given I open BudapestGo website
     When I accept cookies
-    Then the cookies are accepted and I can proceed to landing page
+    Then I can proceed to landing page
 
 2. **Feature**: Language Selection on website
     As a user
@@ -48,7 +48,7 @@ _Budapest GO_
 
    Rule: User can plan a trip from A to B
    Example:
-   Given I open the landing page Budapest GO
+   Given I open the landing page Budapest Go
    When I type "Keleti pályaudvar" into departure field
    When I type "Nyugati pályaudvar" into destination field
    When I click on the Search button
