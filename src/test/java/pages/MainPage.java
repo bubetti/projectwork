@@ -20,11 +20,11 @@ public class MainPage extends BasePage {
         super(driver);
     }
 
-    public void fillFrom(String from) {
+
+    public PlannedRoutesPage plan(String from, String to) {
         fromField.sendKeys(from);
+        toField.sendKeys(to);
+        return new PlannedRoutesPage(driver);
     }
 
-    public void fillTo (String to) {
-        toField.sendKeys(to);
-    }
 }

@@ -1,5 +1,6 @@
 // driver inicializálása
 
+/*
 package baseItems;
 
 import browser.BrowserType;
@@ -27,3 +28,4 @@ public class BaseTest {
         driver.quit();
     }
 }
+*/

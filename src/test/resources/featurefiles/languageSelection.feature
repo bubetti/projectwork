@@ -1,7 +1,7 @@
 //cookie-k kezelése
 Background:
   Given I open BudapestGO website
-  When I accept cookies
+  And I accept cookies
 
 Scenario Outline: Change language
   Given the language is set to "<defaultLanguage>"

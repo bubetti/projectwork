@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0680aa46-6f61-4b34-92d0-da4add6c02a9" name="Changes" comment="day1 (to be continued)">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
+    <list default="true" id="0680aa46-6f61-4b34-92d0-da4add6c02a9" name="Changes" comment="BasePage">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/PlannedRoutesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/BudapestGoSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/planningOptions.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/reverseDirection.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseItems/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/user_stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_stories.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/baseItems/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseItems/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/featurefiles/acceptCookies.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/acceptCookies.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/featurefiles/languageSelection.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/languageSelection.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/featurefiles/tripPlanning.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/tripPlanning.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +51,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/student/Desktop/Java Projects/auto_training/projectwork/src/test/resources/featurefiles",
+    "last_opened_file_path": "C:/Users/student/Desktop/Java Projects/auto_training/projectwork/src/test/java/steps",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "advanced.settings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -92,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700492069345</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="BasePage">
+      <option name="closed" value="true" />
+      <created>1700516950173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700516950173</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +127,7 @@
     <MESSAGE value="user stories list" />
     <MESSAGE value="user stories updated" />
     <MESSAGE value="day1 (to be continued)" />
-    <option name="LAST_COMMIT_MESSAGE" value="day1 (to be continued)" />
+    <MESSAGE value="BasePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="BasePage" />
   </component>
 </project>
