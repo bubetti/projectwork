@@ -23,7 +23,6 @@ import java.util.concurrent.TimeUnit;
 public class BudapestGoSteps {
 
     protected static WebDriver driver;
-    protected static WebDriverWait wait;
     private static MainPage mainPage;
     private static PlannedRoutesPage plannedRoutesPage;
 
@@ -37,10 +36,8 @@ public class BudapestGoSteps {
 
         // init driver
         driver = new ChromeDriver(chromeOptions);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 //        driver.manage().window().setSize(new Dimension(900, 900));
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         mainPage = new MainPage(driver);
         plannedRoutesPage = new PlannedRoutesPage(driver);
@@ -54,8 +51,7 @@ public class BudapestGoSteps {
     @Given("I open BudapestGO website")
     public void iOpenBudapestGO() throws InterruptedException {
         driver.get("https://futar.bkk.hu/");
-        Thread.sleep(3000); //FIXME
-        mainPage.assertPageIsLoaded("BudapestGO Utazástervező");
+        mainPage.isLoaded();
     }
 
     @And("I accept cookies")

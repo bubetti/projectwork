@@ -1,12 +1,9 @@
 package pages;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class MainPage extends BasePage {
 
@@ -20,6 +17,10 @@ public class MainPage extends BasePage {
         super(driver);
     }
 
+    public void isLoaded() {
+        super.isLoaded();
+        Assertions.assertEquals("https://futar.bkk.hu/", driver.getCurrentUrl());
+    }
 
     public PlannedRoutesPage plan(String from, String to) {
         fromField.sendKeys(from);

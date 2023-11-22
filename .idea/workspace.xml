@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0680aa46-6f61-4b34-92d0-da4add6c02a9" name="Changes" comment="BasePage, MainPage, PlannedRoutesPage">
+    <list default="true" id="0680aa46-6f61-4b34-92d0-da4add6c02a9" name="Changes" comment="tripPlanning.feature implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/user_stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_stories.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseItems/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/browser/BrowserType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/browser/DriverInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/browser/Settings.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PlannedRoutesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PlannedRoutesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/BudapestGoSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/BudapestGoSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/featurefiles/tripPlanning.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/tripPlanning.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700574799934</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="tripPlanning.feature implemented">
+      <option name="closed" value="true" />
+      <created>1700658423246</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700658423246</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,17 +191,7 @@
     <MESSAGE value="day1 (to be continued)" />
     <MESSAGE value="BasePage" />
     <MESSAGE value="BasePage, MainPage, PlannedRoutesPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="BasePage, MainPage, PlannedRoutesPage" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/pages/BasePage.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="tripPlanning.feature implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="tripPlanning.feature implemented" />
   </component>
 </project>
