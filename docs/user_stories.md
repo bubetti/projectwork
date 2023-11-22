@@ -11,7 +11,7 @@ https://go.bkk.hu/
     so that I can navigate the content in my preferred language
 
 3. **US3**: Trip planning from A to B
-- _Description_: As a user I want to plan a trip from A (Start Location) to B (End Location) 
+- _Description_: As a user I want to plan a trip from A (start location) to B (destination) 
    so that suggested itineraries are shown.
 
 4. **US4**: Reverse direction

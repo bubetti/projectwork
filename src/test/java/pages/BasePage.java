@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,7 +18,7 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public boolean isLoaded(String expectedTitle) {
-        return driver.getTitle().equals(expectedTitle);
+    public void assertPageIsLoaded(String expectedTitle) {
+        Assertions.assertEquals(expectedTitle, driver.getTitle(), "Page title is wrong!");
     }
 }

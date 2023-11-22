@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0680aa46-6f61-4b34-92d0-da4add6c02a9" name="Changes" comment="BasePage">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/PlannedRoutesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/BudapestGoSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/planningOptions.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/reverseDirection.feature" afterDir="false" />
+    <list default="true" id="0680aa46-6f61-4b34-92d0-da4add6c02a9" name="Changes" comment="BasePage, MainPage, PlannedRoutesPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/user_stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_stories.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseItems/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseItems/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/featurefiles/acceptCookies.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/acceptCookies.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/featurefiles/languageSelection.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/languageSelection.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/baseItems/BaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/browser/BrowserType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/browser/DriverInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/browser/Settings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PlannedRoutesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PlannedRoutesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/BudapestGoSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/BudapestGoSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/featurefiles/tripPlanning.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featurefiles/tripPlanning.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +28,17 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
@@ -55,7 +59,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,6 +71,53 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pages" />
     </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: tripPlanning">
+    <configuration name="Feature: tripPlanning" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/featurefiles/tripPlanning.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="projectwork" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: tripPlanning" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Trip planning" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/featurefiles/tripPlanning.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="projectwork" />
+      <option name="NAME_FILTER" value="^Trip planning$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Trip planning$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Trip planning" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: tripPlanning" />
+        <item itemvalue="Cucumber Java.Scenario: Trip planning" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -109,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700516950173</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="BasePage, MainPage, PlannedRoutesPage">
+      <option name="closed" value="true" />
+      <created>1700574799934</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700574799934</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +187,18 @@
     <MESSAGE value="user stories updated" />
     <MESSAGE value="day1 (to be continued)" />
     <MESSAGE value="BasePage" />
-    <option name="LAST_COMMIT_MESSAGE" value="BasePage" />
+    <MESSAGE value="BasePage, MainPage, PlannedRoutesPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="BasePage, MainPage, PlannedRoutesPage" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/BasePage.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

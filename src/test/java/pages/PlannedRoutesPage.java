@@ -9,6 +9,7 @@ public class PlannedRoutesPage extends BasePage {
     }
 
     public void validatePlannedRoute() {
-        //eredmény ellenőrzése
+        //String titleText = driver.findElement(title).getText();
+        //Assertions.assertEquals("Lehetséges útvonalak", titleText);
     }
 }
