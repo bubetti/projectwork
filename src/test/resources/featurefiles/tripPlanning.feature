@@ -7,7 +7,5 @@ Feature: Trip planning
       And I accept cookies
 
     Scenario: Trip planning
-      When I search for "Keleti pályaudvar" as start location
-      And I search for "Nyugati pályaudvar" as destination
-      And I click on the Search button
+      When I plan a trip from "Keleti pályaudvar" to "Nyugati pályaudvar"
       Then possible routes should be displayed

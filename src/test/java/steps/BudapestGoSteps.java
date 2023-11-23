@@ -19,7 +19,6 @@ import pages.PlannedRoutesPage;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-
 public class BudapestGoSteps {
 
     protected static WebDriver driver;
@@ -37,7 +36,7 @@ public class BudapestGoSteps {
         // init driver
         driver = new ChromeDriver(chromeOptions);
 //        driver.manage().window().setSize(new Dimension(900, 900));
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         mainPage = new MainPage(driver);
         plannedRoutesPage = new PlannedRoutesPage(driver);
@@ -54,27 +53,25 @@ public class BudapestGoSteps {
         mainPage.isLoaded();
     }
 
-    @And("I accept cookies")
+    @Given("I accept cookies")
     public void iAcceptCookies() {
-        By cookieButton = By.xpath("//button[text()='Elfogadom']");
-        driver.findElement(cookieButton).click();
+        mainPage.acceptCookies();
     }
 
     @When("I search for {string} as start location")
     public void iSearchForStartLocation(String startLocation) {
-        By startLocationField = By.xpath("//input[@placeholder='Honnan']");
-        driver.findElement(startLocationField).sendKeys(startLocation + Keys.TAB);
+        mainPage.fillFromField(startLocation);
     }
 
     @And("I search for {string} as destination")
     public void iSearchForEndLocation(String destination) {
-        By destinationLocationField = By.xpath("//input[@placeholder='Hova']");
+        By destinationLocationField = By.xpath("//input[@placeholder='Hova'])"); // TODO: put this to MainPage
         driver.findElement(destinationLocationField).sendKeys(destination + Keys.TAB);
     }
 
     @And("I click on the Search button")
     public void iClickOnTheSearchButton() {
-        driver.findElement(By.xpath("//input[@type='submit']")).click();
+        driver.findElement(By.xpath("//input[@type='submit']")).click(); // TODO: put this to MainPage
     }
 
     @Then("possible routes should be displayed")
@@ -82,5 +79,10 @@ public class BudapestGoSteps {
         By title = By.tagName("h2");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.textToBePresentInElementLocated(title, "Lehetséges útvonalak"));
+    }
+
+    @When("I plan a trip from {string} to {string}")
+    public void iPlanATripFromTo(String from, String to) {
+        mainPage.plan(from, to);
     }
 }
