@@ -40,15 +40,16 @@ public class MainPage extends BasePage {
 
 
     public void fillFromField(String value) {
-
         fromField.sendKeys(value + Keys.TAB);
     }
 
     public void fillToField(String value) {
-
         toField.sendKeys(value + Keys.TAB);
     }
 
+    public void clickOnSearch() {
+        planButton.click();
+    }
 
     public PlannedRoutesPage plan(String from, String to) {
         fillFromField(from);

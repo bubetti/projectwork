@@ -65,13 +65,12 @@ public class BudapestGoSteps {
 
     @And("I search for {string} as destination")
     public void iSearchForEndLocation(String destination) {
-        By destinationLocationField = By.xpath("//input[@placeholder='Hova'])"); // TODO: put this to MainPage
-        driver.findElement(destinationLocationField).sendKeys(destination + Keys.TAB);
+        mainPage.fillToField(destination);
     }
 
     @And("I click on the Search button")
     public void iClickOnTheSearchButton() {
-        driver.findElement(By.xpath("//input[@type='submit']")).click(); // TODO: put this to MainPage
+        mainPage.clickOnSearch();
     }
 
     @Then("possible routes should be displayed")
